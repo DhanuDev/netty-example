@@ -1,0 +1,54 @@
+{
+  "id": "0f671ef9-cbf0-4300-ae3d-f236a9a824e5-fund",
+  "schemaVersion": 1,
+  "displayName": "March27ChecklistUpdate",
+  "providerName": "Microsoft",
+  "version": "1",
+  "minorVersion": "3",
+  "icon": "SurveyIcon.png",
+  "appModel": "AppModel.json",
+  "description": "March27ChecklistUpdate",
+  "parentTemplateId": "checklist",
+  "ActionStoreSchema": "ActionStoreSchema.json",
+  "NotificationModelFile": "NotificationModel.json",
+  "dials": {
+    "IsLocalised": true
+  },
+  "views": {
+    "ChatCanvasCardView": {
+      "labelResponseSending": "",
+      "labelResponseFailed": "",
+      "labelResponded": "",
+      "labelRespondToForm": "LabelRespondToFormPlaceHolder",
+      "sourceLocation": "chatCardView.json",
+      "labelUpdateResponse": "CardFooterLabel",
+      "ShowExpiry": false,
+      "ShowHeader": true,
+      "ShowFooter": false
+    },
+    "CreationView": {
+      "sourceLocation": "CreationView.html",
+      "ShowNativeToolbar": false,
+      "type": "html",
+      "backDialogVisibility": "true",
+      "BackDialogTitle": "CreationDiscardTitle",
+      "backDialogDescription": "DiscardDailogMessage"
+    },
+    "ResponseResultsView": {
+      "sourceLocation": "SummaryView.html",
+      "type": "html",
+      "ShowNativeToolbar": false,
+      "backDialogVisibility": "false",
+      "labelPageHeader": "Action summary",
+      "labelShareActionResults": ""
+    },
+    "ResponseView": {
+      "sourceLocation": "ResponseView.html",
+      "type": "html",
+      "ShowNativeToolbar": false,
+      "backDialogVisibility": "true",
+      "BackDialogTitle": "ResponseDiscardTitle",
+      "backDialogDescription": "DiscardDailogMessage"
+    }
+  }
+}
